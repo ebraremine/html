@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tüm Etkinlikler</title>
+</head>
+<body>
+    <header>
+        <h1>Tüm Etkinlikler</h1>
+        <nav>
+            <a href="index.html">Ana Sayfa</a> | 
+            <a href="etkinlikler.html">Tüm Etkinlikler</a> | 
+            <a href="etkinlik-ekle.html">Etkinlik Ekle</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2>Etkinlik Listesi</h2>
+            <!-- Tek Sütunlu Çerçeveli Tablo: Her etkinlik tek hücrede bir kart olarak -->
+            <table border="1" width="100%">
+                <caption>Güncel Etkinlik Akışı</caption>
+                <tr>
+                    <td>
+                        <article>
+                            <h2>Yapay Zeka ve Gelecek Konferansı</h2>
+                            <p><strong>Kategori:</strong> Teknoloji / Seminer</p>
+                            <p><strong>Tarih:</strong> <time datetime="2026-10-15">15 Ekim 2026 - 14:00</time></p>
+                            <p><strong>Yer:</strong> Teknoloji Merkezi Amfisi</p>
+                            <p>Yapay zekanın iş dünyası ve günlük yaşam üzerindeki etkilerinin tartışılacağı uzman paneli.</p>
+                            <a href="etkinlik-detay.html">Detaylı Bilgi</a> | 
+                            <a href="etkinlik-guncelle.html">Düzenle</a>
+                        </article>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <article>
+                            <h2>Açık Hava Klasik Müzik Konseri</h2>
+                            <p><strong>Kategori:</strong> Müzik / Konser</p>
+                            <p><strong>Tarih:</strong> <time datetime="2026-10-20">20 Ekim 2026 - 19:30</time></p>
+                            <p><strong>Yer:</strong> Kent Parkı Sahnesi</p>
+                            <p>Sonbahar akşamında doğayla iç içe klasik müzik dinletisi.</p>
+                            <a href="etkinlik-detay.html">Detaylı Bilgi</a> | 
+                            <a href="etkinlik-guncelle.html">Düzenle</a>
+                        </article>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <br><hr><br>
+
+        <section>
+            <!-- Ayın Programı Özet Tablosu -->
+            <table border="1" width="100%">
+                <caption>Ayın Programı Özeti</caption>
+                <thead>
+                    <tr>
+                        <th>Tarih</th>
+                        <th>Etkinlik Adı</th>
+                        <th>Kategori</th>
+                        <th>Konum</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>15 Ekim 2026</td>
+                        <td>Yapay Zeka ve Gelecek Konferansı</td>
+                        <td>Teknoloji</td>
+                        <td>Teknoloji Merkezi</td>
+                    </tr>
+                    <tr>
+                        <td>20 Ekim 2026</td>
+                        <td>Açık Hava Klasik Müzik Konseri</td>
+                        <td>Müzik</td>
+                        <td>Kent Parkı</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

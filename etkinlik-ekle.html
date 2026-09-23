@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeni Etkinlik Ekle</title>
+</head>
+<body>
+    <header>
+        <h1>Yeni Etkinlik Ekle</h1>
+        <nav>
+            <a href="index.html">Ana Sayfa</a> | 
+            <a href="etkinlikler.html">Tüm Etkinlikler</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <form action="#" method="post">
+            <p>
+                <label for="ad">Etkinlik Adı:</label><br>
+                <input type="text" id="ad" name="ad" required placeholder="Etkinlik adını giriniz">
+            </p>
+
+            <p>
+                <label for="kategori">Kategori:</label><br>
+                <select id="kategori" name="kategori" required>
+                    <option value="">Seçiniz...</option>
+                    <option value="teknoloji">Teknoloji</option>
+                    <option value="muzik">Müzik</option>
+                    <option value="tiyatro">Tiyatro</option>
+                    <option value="spor">Spor</option>
+                    <option value="egitim">Eğitim</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="tarih">Tarih:</label><br>
+                <input type="date" id="tarih" name="tarih" required>
+            </p>
+
+            <p>
+                <label for="saat">Saat:</label><br>
+                <input type="time" id="saat" name="saat" required>
+            </p>
+
+            <p>
+                <label for="yer">Yer / Mekan:</label><br>
+                <input type="text" id="yer" name="yer" required placeholder="Etkinlik mekanını giriniz">
+            </p>
+
+            <p>
+                <label for="aciklama">Etkinlik Açıklaması:</label><br>
+                <textarea id="aciklama" name="aciklama" rows="5" cols="40" placeholder="Etkinlik detaylarını yazınız..."></textarea>
+            </p>
+
+            <p>
+                <button type="submit">Gönder</button>
+            </p>
+        </form>
+    </main>
+</body>
+</html>
