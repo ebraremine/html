@@ -4,60 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etkinlik Güncelle</title>
+    <!-- Kendi öğrenci numaranızla bağlı CSS dosyası -->
+    <link rel="stylesheet" href="css/2311012011.css">
 </head>
 <body>
-    <header>
-        <h1>Etkinlik Bilgilerini Güncelle</h1>
+
+    <header class="yesil-header">
+        <h1>Etkinlik Güncelle</h1>
         <nav>
             <a href="index.html">Ana Sayfa</a> | 
-            <a href="etkinlikler.html">Tüm Etkinlikler</a>
+            <a href="etkinlikler.html">Tüm Etkinlikler</a> | 
+            <a href="etkinlik-ekle.html">Etkinlik Ekle</a> |
+            <a href="etkinlik-guncelle.html">Etkinlik Güncelle</a>
         </nav>
     </header>
 
-    <hr>
+    <main class="icerik-alani">
+        <form action="#" method="post" class="etkinlik-formu">
+            
+            <div class="form-grup">
+                <label for="ad">Etkinlik adı</label>
+                <input type="text" id="ad" name="ad" value="Kariyer Günleri 2026">
+            </div>
 
-    <main>
-        <form action="#" method="post">
-            <p>
-                <label for="ad">Etkinlik Adı:</label><br>
-                <input type="text" id="ad" name="ad" value="Yapay Zeka ve Gelecek Konferansı" required>
-            </p>
-
-            <p>
-                <label for="kategori">Kategori:</label><br>
-                <select id="kategori" name="kategori" required>
-                    <option value="teknoloji" selected>Teknoloji</option>
-                    <option value="muzik">Müzik</option>
-                    <option value="tiyatro">Tiyatro</option>
-                    <option value="spor">Spor</option>
-                    <option value="egitim">Eğitim</option>
+            <div class="form-grup">
+                <label for="kategori">Kategori</label>
+                <select id="kategori" name="kategori">
+                    <option value="Seminer" selected>Seminer</option>
+                    <option value="Atölye">Atölye</option>
+                    <option value="Söyleşi">Söyleşi</option>
+                    <option value="Teknoloji">Teknoloji</option>
                 </select>
-            </p>
+            </div>
 
-            <p>
-                <label for="tarih">Tarih:</label><br>
-                <input type="date" id="tarih" name="tarih" value="2026-10-15" required>
-            </p>
+            <div class="form-grup">
+                <label for="tarih">Tarih</label>
+                <input type="text" id="tarih" name="tarih" value="12.10.2026">
+            </div>
 
-            <p>
-                <label for="saat">Saat:</label><br>
-                <input type="time" id="saat" name="saat" value="14:00" required>
-            </p>
+            <div class="form-grup">
+                <label for="yer">Yer / Mekan</label>
+                <input type="text" id="yer" name="yer" value="Teknoloji Merkezi Amfisi">
+            </div>
 
-            <p>
-                <label for="yer">Yer / Mekan:</label><br>
-                <input type="text" id="yer" name="yer" value="Teknoloji Merkezi Amfisi" required>
-            </p>
+            <div class="form-grup">
+                <label for="aciklama">Açıklama</label>
+                <textarea id="aciklama" name="aciklama" rows="3">Mezun söyleşileri ve şirket standları.</textarea>
+            </div>
 
-            <p>
-                <label for="aciklama">Etkinlik Açıklaması:</label><br>
-                <textarea id="aciklama" name="aciklama" rows="5" cols="40">Yapay zekanın iş dünyası ve günlük yaşam üzerindeki etkilerinin tartışılacağı uzman paneli.</textarea>
-            </p>
+            <button type="submit" class="btn-yesil">Güncelle</button>
 
-            <p>
-                <button type="submit">Güncelle</button>
-            </p>
         </form>
     </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2026 Etkinlik Portalı - Tüm hakları saklıdır.</p>
+    </footer>
+
 </body>
 </html>

@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şehir Etkinlik Portalı - Ana Sayfa</title>
+    <!-- Kendi numaranla CSS dosya bağlantısı -->
+    <link rel="stylesheet" href="css/2311012011.css">
 </head>
 <body>
-    <header>
+
+    <header class="yesil-header">
         <h1>Şehir Etkinlik Portalı</h1>
         <p>Amacımız, şehrinizdeki en güncel kültür, sanat ve eğitim etkinliklerini tek bir çatı altında toplamak ve kolayca erişmenizi sağlamaktır.</p>
         <nav>
@@ -17,37 +19,38 @@
         </nav>
     </header>
 
-    <hr>
+    <main class="icerik-alani">
+        <h2>Yaklaşan 2 etkinlik</h2>
 
-    <main>
-        <section>
-            <h2>Yaklaşan Etkinlikler</h2>
-
-            <!-- Etkinlik Hücre / Kart Şablonu 1 -->
-            <article>
+        <!-- Sadece 2 kart yan yana (Sprint 2 düzeni) -->
+        <section class="ana-sayfa-grid">
+            
+            <article class="etkinlik-karti">
                 <h3>Yapay Zeka ve Gelecek Konferansı</h3>
                 <p><strong>Tarih:</strong> <time datetime="2026-10-15">15 Ekim 2026</time></p>
                 <p><strong>Yer:</strong> Teknoloji Merkezi Amfisi</p>
                 <p>Geleceğin teknolojileri ve yapay zeka alanındaki son gelişmeler konuşuluyor.</p>
-                <a href="etkinlik-detay.html">Detayları Gör</a>
+                <a href="etkinlik-detay.html" class="detay-link">Detay &rarr;</a>
             </article>
 
-            <hr>
-
-            <!-- Etkinlik Hücre / Kart Şablonu 2 -->
-            <article>
+            <article class="etkinlik-karti">
                 <h3>Açık Hava Klasik Müzik Konseri</h3>
                 <p><strong>Tarih:</strong> <time datetime="2026-10-20">20 Ekim 2026</time></p>
                 <p><strong>Yer:</strong> Kent Parkı Sahnesi</p>
                 <p>Filarmoni orkestrasından unutulmaz bir akşam konseri.</p>
-                <a href="etkinlik-detay.html">Detayları Gör</a>
+                <a href="etkinlik-detay.html" class="detay-link">Detay &rarr;</a>
             </article>
+
         </section>
+
+        <br>
+        <a href="etkinlikler.html" class="detay-link">Tüm etkinlikleri gör &rarr;</a>
     </main>
 
     <footer>
         <hr>
         <p>&copy; 2026 Etkinlik Portalı - Tüm hakları saklıdır.</p>
     </footer>
+
 </body>
 </html>
